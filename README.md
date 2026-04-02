@@ -55,8 +55,4 @@ En raison du déséquilibre des classes, les métriques probabilistes et de rank
 * **Langage :** R (statistiques descriptives, modélisation glm, évaluation)
 * **Méthodes statistiques :** Inférence statistique, Régression logistique, Feature Engineering, Stepwise AIC.
 
-##  Structure du Répertoire
-* `data/` : Contient le jeu de données transactionnelles (si applicable/public).
-* `scripts/` : Scripts d'exploration de données (EDA) et d'entraînement des modèles.
-* `docs/` : Rapport de projet complet et présentation PDF.
 
