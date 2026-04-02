@@ -6,7 +6,7 @@
 
 Ce dépôt contient le code et les résultats de notre projet d'Analyse des Données, réalisé dans le cadre du Master 2 Ingénierie Mathématique  à Sorbonne Université (Promotion 2025/2026). 
 
-## 🎯 Contexte et Objectifs
+##  Contexte et Objectifs
 
 Le projet porte sur la détection de fraude à la carte bancaire à partir de données transactionnelles. La fraude constituant une classe extrêmement rare (1,51 % de l'échantillon, soit 151 fraudes pour 10 000 transactions), la difficulté principale réside dans le fort déséquilibre des classes. 
 
@@ -14,7 +14,7 @@ L'objectif de cette étude est double:
 1. **Ranking (Classement)** : Construire un scoring probabiliste capable de maximiser la détection des fraudes et de prioriser les transactions à risque (en privilégiant la métrique PR AUC).
 2. **Interprétabilité** : Produire un modèle transparent et cohérent métier, en identifiant statistiquement les facteurs augmentant le risque.
 
-## 📊 Données et Prétraitement
+##  Données et Prétraitement
 
 Le jeu de données synthétique (Credit Card Fraud Detection Dataset) comprend 10 000 transactions.
 Des contrôles de qualité rigoureux ont été appliqués (absence de valeurs manquantes et de doublons). 
@@ -38,7 +38,7 @@ Six modèles de **régression logistique** ont été entraînés et comparés su
 * **STEP** : Sélection automatique stepwise (critère AIC) avec un espace incluant les interactions à deux facteurs.
 *Chaque structure a été testée en version standard (`unweighted`) et pondérée (`weighted`) pour gérer le déséquilibre.*
 
-## 📈 Résultats et Évaluation
+##  Résultats et Évaluation
 
 En raison du déséquilibre des classes, les métriques probabilistes et de ranking (PR AUC, Score de Brier, ECE, Calibration) ont été privilégiées par rapport à la simple ROC AUC.
 
@@ -51,11 +51,11 @@ En raison du déséquilibre des classes, les métriques probabilistes et de rank
 * **Comportement :** Le risque augmente de façon non linéaire avec la vélocité des transactions sur 24h (`velocity_last_24h`).
 *  **Temporalité :** Une sur-fraude notable est concentrée la nuit (tranche 00h-03h).
 
-## 🛠️ Outils & Langages
+## Outils & Langages
 * **Langage :** R (statistiques descriptives, modélisation glm, évaluation)
 * **Méthodes statistiques :** Inférence statistique, Régression logistique, Feature Engineering, Stepwise AIC.
 
-## 📂 Structure du Répertoire
+##  Structure du Répertoire
 * `data/` : Contient le jeu de données transactionnelles (si applicable/public).
 * `scripts/` : Scripts d'exploration de données (EDA) et d'entraînement des modèles.
 * `docs/` : Rapport de projet complet et présentation PDF.
